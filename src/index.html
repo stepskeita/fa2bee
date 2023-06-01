@@ -10,6 +10,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="/dist/style.css" rel="stylesheet" />
+
     <title>Fa2Bee</title>
     <meta name="description" content="Fa2Bee Inc." />
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
@@ -22,40 +32,43 @@
     <meta property="og:description" content="Fa2Bee Inc." />
     <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="Fa2Bee" />
-    <link href="/dist/style.css" rel="stylesheet" />
   </head>
   <body>
     <!-- nav -->
     <nav
-      class="bg-customBlack p-2 px-7 flex items-center justify-between sticky top-0"
+      class="bg-customBlack/70 px-7 py-3 flex items-center justify-between sticky top-0 h-fit z-50"
     >
       <a href="">
-        <img src="img/logo-white.png" alt="" class="h-10 object-scale-down" />
+        <img src="img/logo-white.png" alt="" class="h-11 object-scale-down" />
       </a>
-      <div class="flex items-center text-white">
+      <!-- desktop menu -->
+      <div class="xl:hidden">
+        <i class="fa-solid fa-bars fa-xl cursor-pointer text-beeYellow"></i>
+      </div>
+      <div class="hidden xl:flex items-center text-white">
         <a
           href=""
-          class="p-2 text-sm px-3 border-t border-beeYellow hover:text-lightBeeYellow"
+          class="p-2 px-3 text-sm border-t-2 border-beeYellow hover:text-beeYellow/95"
           >Home</a
         >
         <a
           href=""
-          class="p-2 text-sm px-3 hover:border-t hover:border-beeYellow hover:text-lightBeeYellow active:border-beeYellow"
+          class="p-2 px-3 text-sm hover:border-t-2 hover:border-beeYellow hover:text-beeYellow/95 active:border-beeYellow"
           >About</a
         >
         <a
           href=""
-          class="p-2 text-sm px-3 hover:border-t hover:border-beeYellow hover:text-lightBeeYellow active:border-beeYellow"
+          class="p-2 px-3 text-sm hover:border-t-2 hover:border-beeYellow hover:text-beeYellow/95 active:border-beeYellow"
           >Services</a
         >
         <a
           href=""
-          class="p-2 text-sm px-3 hover:border-t hover:border-beeYellow hover:text-lightBeeYellow active:border-beeYellow"
+          class="p-2 px-3 text-sm hover:border-t-2 hover:border-beeYellow hover:text-beeYellow/95 active:border-beeYellow"
           >Testimonials</a
         >
         <a
           href=""
-          class="p-2 text-sm px-3 hover:border-t hover:border-beeYellow hover:text-lightBeeYellow active:border-beeYellow"
+          class="p-2 px-3 text-sm hover:border-t-2 hover:border-beeYellow hover:text-beeYellow/95 active:border-beeYellow"
           >Contact</a
         >
       </div>
@@ -63,14 +76,10 @@
     <!-- carousel -->
     <div
       id="carouselExampleCaptions"
-      class="relative"
+      class="relative h-[93vh]"
       data-te-carousel-init
       data-te-carousel-slide
     >
-      <!-- overlay -->
-      <div
-        class="absolute top-0 left-0 w-full h-full bg-customDark/30 z-30"
-      ></div>
       <!--Carousel indicators-->
       <div
         class="absolute right-5 top-1/2 z-50 flex flex-col"
@@ -96,46 +105,96 @@
 
       <!--Carousel items-->
       <div
-        class="relative w-full overflow-hidden after:clear-both after:block after:content-['']"
+        class="relative w-full h-full overflow-hidden after:clear-both after:block after:content-['']"
       >
         <!--First item-->
         <div
-          class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          class="relative float-left -mr-[100%] w-full h-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
           data-te-carousel-active
           data-te-carousel-item
           style="backface-visibility: hidden"
         >
           <img
-            src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(15).jpg"
-            class="block w-full"
+            src="img/riahbee_home1.webp"
+            class="block w-full h-full object-cover transition-transform duration-300 scale-x-100 scale-y-110"
             alt=""
           />
+          <!-- overlay -->
           <div
-            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white z-50"
+            class="absolute top-0 left-0 w-full h-full bg-customDark/70 z-30 flex items-center justify-center p-10 text-white"
           >
-            <h2 class="text-5xl font-extrabold mb-2">
-              <span class="font-extralight">Fa2Bee</span> Inc
-            </h2>
+            <div class="text-center flex items-center flex-col justify-center">
+              <h2
+                class="flex items-center text-4xl md:text-5xl xl:text-7xl mb-6 font-thin animate__animated animate__slideInLeft"
+                data-wow-duration="5s"
+                data-wow-delay="3s"
+              >
+                <span class="font-thin text-beeYellow mx-2">Fa2Bee</span>
+                <span class="font-extrabold mx-2">Inc</span>
+              </h2>
+              <div
+                class="font-light text-sm md:text-lg animate__animated animate__slideInRight flex items-center mb-7"
+                data-wow-duration="4s"
+                data-wow-delay="3s"
+              >
+                <div class="w-10 h-0.5 bg-beeYellow mx-2 lg:mx-4"></div>
+                <p>We are a team of professionals</p>
+                <div class="w-10 h-0.5 bg-beeYellow mx-2 lg:mx-4"></div>
+              </div>
+              <a
+                href="#aboutus"
+                class="block mt-3 w-fit rounded-3xl hover:bg-customBlack hover:text-beeYellow hover:border hover:border-beeYellow transition-colors duration-500 mx-auto bg-beeYellow text-customBlack py-3 px-7 animate__animated animate__slideInUp"
+                data-wow-duration="7s"
+                data-wow-delay="5s"
+              >
+                About Company
+              </a>
+            </div>
           </div>
         </div>
 
         <!--Second item-->
         <div
-          class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          class="relative float-left -mr-[100%] hidden w-full h-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
           data-te-carousel-item
           style="backface-visibility: hidden"
         >
           <img
-            src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(23).jpg"
-            class="block w-full"
+            src="img/riahBee_8.png"
+            class="block w-full h-full object-cover transition-transform duration-300 scale-x-100 scale-y-110"
             alt=""
           />
+          <!-- overlay -->
           <div
-            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white z-50"
+            class="absolute top-0 left-0 w-full h-full bg-customDark/70 z-30 flex items-center justify-center p-10 text-white"
           >
-            <h2 class="text-5xl font-extrabold mb-2">
-              <span class="font-extralight">Meet</span> Fa2Bee
-            </h2>
+            <div class="text-center flex items-center flex-col justify-center">
+              <h2
+                class="flex items-center text-4xl md:text-5xl xl:text-7xl mb-6 font-thin animate__animated animate__slideInDown"
+                data-wow-duration="5s"
+                data-wow-delay="3s"
+              >
+                <span class="font-thin text-beeYellow mx-2">RIAHBEE</span>
+                <span class="font-extrabold mx-2">Laundry</span>
+              </h2>
+              <div
+                class="font-light text-sm md:text-lg animate__animated animate__slideInRight flex items-center mb-7"
+                data-wow-duration="4s"
+                data-wow-delay="3s"
+              >
+                <div class="w-10 h-0.5 bg-beeYellow mx-2 lg:mx-4"></div>
+                <p>We are a team of professionals</p>
+                <div class="w-10 h-0.5 bg-beeYellow mx-2 lg:mx-4"></div>
+              </div>
+              <a
+                href=""
+                class="block mt-3 w-fit rounded-3xl hover:bg-customBlack hover:text-beeYellow hover:border hover:border-beeYellow transition-colors duration-500 mx-auto bg-beeYellow text-customBlack py-3 px-7 animate__animated animate__slideInUp"
+                data-wow-duration="7s"
+                data-wow-delay="5s"
+              >
+                More Details
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -159,10 +218,12 @@
         <i class="fa-solid fa-chevron-right text-customBlack"></i>
       </button> -->
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
 
     <script
       type="text/javascript"
       src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"
     ></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
