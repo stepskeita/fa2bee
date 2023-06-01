@@ -1121,6 +1121,10 @@ video {
   height: 18rem;
 }
 
+.h-64 {
+  height: 16rem;
+}
+
 .max-h-\[calc\(100\%-64px\)\] {
   max-height: calc(100% - 64px);
 }
@@ -3952,6 +3956,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:h-72 {
+    height: 18rem;
+  }
+
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
