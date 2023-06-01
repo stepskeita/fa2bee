@@ -10,14 +10,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"
-    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.min.css" />
+
+    <!-- Default Theme -->
+    <link rel="stylesheet" href="owl-carousel/owl.theme.default.min.css" />
+
     <link href="/dist/style.css" rel="stylesheet" />
 
     <title>Fa2Bee</title>
@@ -75,7 +77,7 @@
     </nav>
     <!-- carousel -->
     <div
-      id="carouselExampleCaptions"
+      id="showcase"
       class="relative h-[93vh]"
       data-te-carousel-init
       data-te-carousel-slide
@@ -87,7 +89,7 @@
       >
         <button
           type="button"
-          data-te-target="#carouselExampleCaptions"
+          data-te-target="#showcase"
           data-te-slide-to="0"
           data-te-carousel-active
           class="w-3 h-3 my-1 rounded-full border border-white bg-beeYellow bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
@@ -96,7 +98,7 @@
         ></button>
         <button
           type="button"
-          data-te-target="#carouselExampleCaptions"
+          data-te-target="#showcase"
           data-te-slide-to="1"
           class="w-3 h-3 my-1 rounded-full border border-white bg-beeYellow bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
           aria-label="Slide 2"
@@ -115,7 +117,7 @@
           style="backface-visibility: hidden"
         >
           <img
-            src="img/riahbee_home1.webp"
+            src="img/laundry/riahbee_home1.webp"
             class="block w-full h-full object-cover transition-transform duration-300 scale-x-100 scale-y-110"
             alt=""
           />
@@ -160,7 +162,7 @@
           style="backface-visibility: hidden"
         >
           <img
-            src="img/riahBee_8.png"
+            src="img/laundry/riahBee_8.png"
             class="block w-full h-full object-cover transition-transform duration-300 scale-x-100 scale-y-110"
             alt=""
           />
@@ -183,7 +185,7 @@
                 data-wow-delay="3s"
               >
                 <div class="w-10 h-0.5 bg-beeYellow mx-2 lg:mx-4"></div>
-                <p>We are a team of professionals</p>
+                <p>We do commercial laundry for all</p>
                 <div class="w-10 h-0.5 bg-beeYellow mx-2 lg:mx-4"></div>
               </div>
               <a
@@ -198,32 +200,100 @@
           </div>
         </div>
       </div>
-
-      <!--Carousel controls - prev item-->
-      <!-- <button
-        class="rounded-full bg-beeYellow w-9 h-9 flex items-center justify-center absolute top-1/2 left-10"
-        type="button"
-        data-te-target="#carouselExampleCaptions"
-        data-te-slide="prev"
-      >
-        <i class="fa-solid fa-chevron-left text-customBlack"></i>
-      </button> -->
-      <!--Carousel controls - next item-->
-      <!-- <button
-        class="rounded-full bg-beeYellow w-9 h-9 flex items-center justify-center absolute top-1/2 right-10"
-        type="button"
-        data-te-target="#carouselExampleCaptions"
-        data-te-slide="next"
-      >
-        <i class="fa-solid fa-chevron-right text-customBlack"></i>
-      </button> -->
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+
+    <!-- about us -->
+
+    <div class="p-5 py-14 xl:p-20" id="aboutus">
+      <h1
+        class="text-center mb-7 text-beeYellow font-bold text-2xl md:text-3xl xl:text-4xl"
+      >
+        About Us
+      </h1>
+      <div class="flex items-center justify-center mb-14">
+        <div class="h-0.5 bg-beeYellow/50 w-20 mx-3"></div>
+        <img src="img/bee-with-ring.png" class="mx-2" />
+        <div class="h-0.5 bg-beeYellow/50 w-20 mx-3"></div>
+      </div>
+
+      <div
+        class="owl-carousel owl-theme w-11/12 lg:1-10/12 xl:w-9/12 h-fit mx-auto rounded-2xl overflow-hidden bg-customBlack shadow-lg shadow-black/30"
+      >
+        <div class="item flex flex-col lg:flex-row lg:items-stretch">
+          <div class="w-full lg:w-1/2 h-96">
+            <a href="" class="h-full w-full">
+              <img
+                src="img/laundry/riahbee_home1.webp"
+                class="w-full h-full object-cover"
+              />
+            </a>
+          </div>
+          <div class="flex-1 p-5">
+            <h2 class="text-2xl font-extrabold mb-2">Fa2Bee Inc.</h2>
+            <p class="font-light my-7">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+              harum totam officiis dolor veritatis tempore nulla? Ipsam saepe,
+              id esse officia at nesciunt architecto atque?
+            </p>
+            <p class="font-light my-7">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non enim
+              eius aspernatur consectetur quisquam accusamus earum at
+              consequuntur, sunt similique perferendis ut itaque explicabo
+              quidem.
+            </p>
+
+            <a
+              href=""
+              class="block mt-3 w-fit rounded-3xl hover:bg-customBlack hover:text-beeYellow hover:border hover:border-beeYellow transition-colors duration-500 bg-beeYellow text-customBlack py-3 px-7 animate__animated animate__slideInUp"
+              data-wow-duration="7s"
+              data-wow-delay="5s"
+            >
+              Read More
+            </a>
+          </div>
+        </div>
+        <div class="item flex flex-col lg:flex-row lg:items-stretch">
+          <div class="w-full lg:w-1/2 h-96">
+            <a href="" class="h-full w-full">
+              <img
+                src="img/fatou-b/vitamins.jpg"
+                class="w-full h-full object-cover"
+              />
+            </a>
+          </div>
+          <div class="flex-1 p-5">
+            <h2 class="text-2xl font-extrabold mb-2">Fatou B Ceesay</h2>
+            <p class="font-light my-7">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+              harum totam officiis dolor veritatis tempore nulla? Ipsam saepe,
+              id esse officia at nesciunt architecto atque?
+            </p>
+            <p class="font-light my-7">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non enim
+              eius aspernatur consectetur quisquam accusamus earum at
+              consequuntur, sunt similique perferendis ut itaque explicabo
+              quidem.
+            </p>
+
+            <a
+              href=""
+              class="block mt-3 w-fit rounded-3xl hover:bg-customBlack hover:text-beeYellow hover:border hover:border-beeYellow transition-colors duration-500 bg-beeYellow text-customBlack py-3 px-7 animate__animated animate__slideInUp"
+              data-wow-duration="7s"
+              data-wow-delay="5s"
+            >
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script
       type="text/javascript"
       src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"
     ></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="owl-carousel/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

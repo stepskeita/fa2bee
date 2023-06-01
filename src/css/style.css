@@ -13,6 +13,10 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  color: white;
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
   background-color: var(--custom-dark);
