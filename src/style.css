@@ -4004,6 +4004,10 @@ video {
     width: 75%;
   }
 
+  .xl\:w-10 {
+    width: 2.5rem;
+  }
+
   .xl\:p-20 {
     padding: 5rem;
   }
@@ -4016,6 +4020,11 @@ video {
   .xl\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
+  }
+
+  .xl\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
