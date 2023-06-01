@@ -824,6 +824,16 @@ video {
   margin-bottom: 5px;
 }
 
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .-mr-\[100\%\] {
   margin-right: -100%;
 }
@@ -3996,6 +4006,11 @@ video {
 
   .lg\:items-stretch {
     align-items: stretch;
+  }
+
+  .lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
