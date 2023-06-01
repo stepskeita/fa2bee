@@ -22,6 +22,12 @@ body {
   background-color: var(--custom-dark);
   min-height: 100vh;
 }
+.nav {
+  z-index: 1000;
+}
+.socialLinks {
+  z-index: 500;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
