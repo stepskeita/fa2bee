@@ -34,41 +34,6 @@ const testimonials = [
       "I've used their cleaning services for both my home and office, and I've been consistently impressed. They pay attention to detail and ensure that every nook and corner is spotless. Great job!",
     image: "./img/testimonials/female-3.png",
   },
-  // {
-  //   name: "Baboucarr Mendy",
-  //   service: "Laundry",
-  //   testimonial:
-  //     "This laundry service is a game-changer for me. They handle my laundry with care, even the delicate items, and deliver them back promptly. It's a huge relief not to worry about laundry anymore!",
-  //   image: "./img/testimonials/male-3.png",
-  // },
-  // {
-  //   name: "Aminata Ceesay",
-  //   service: "Kids Salon",
-  //   testimonial:
-  //     "I take my children to this salon regularly, and they always have a blast. The staff is amazing with kids and creates a fun and safe environment. The haircuts are stylish, and my kids can't wait to go back!",
-  //   image: "./img/testimonials/female-4.png",
-  // },
-  // {
-  //   name: "Ousman Jagne",
-  //   service: "Crochet",
-  //   testimonial:
-  //     "This company is a crocheter's paradise! They have a wide range of yarns in various colors and textures. The quality is excellent, and I always find what I need for my crochet projects. Highly recommended!",
-  //   image: "./img/testimonials/male-4.png",
-  // },
-  // {
-  //   name: "Mariama Ceesay",
-  //   service: "Cleaning",
-  //   testimonial:
-  //     "I've tried several cleaning services, but this one stands out. The cleaners are punctual, trustworthy, and go above and beyond to ensure my home is immaculate. I'm a satisfied customer!",
-  //   image: "./img/testimonials/female-5.png",
-  // },
-  // {
-  //   name: "Bakary Touray",
-  //   service: "Laundry",
-  //   testimonial:
-  //     "I can't express how much time this laundry service has saved me. The convenience of having my clothes picked up, cleaned, and delivered back is a game-changer. The quality of their work is top-notch!",
-  //   image: "./img/testimonials/male-5.png",
-  // },
 ];
 
 const testimonalCarousel = document.querySelector(".testimonial-carousel");

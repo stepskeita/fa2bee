@@ -90,7 +90,7 @@
       >
         <!--Carousel indicators-->
         <div
-          class="absolute right-5 top-1/2 z-50 flex flex-col"
+          class="absolute right-5 top-1/2 z-50 flex flex-col indicatorsContainer"
           data-te-carousel-indicators
         >
           <button
@@ -101,23 +101,13 @@
             class="w-3 h-3 my-1 rounded-full border border-white bg-beeYellow bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
             aria-current="true"
           ></button>
-          <button
-            type="button"
-            data-te-target="#showcase"
-            data-te-slide-to="1"
-            class="w-3 h-3 my-1 rounded-full border border-white bg-beeYellow bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-          ></button>
-          <button
-            type="button"
-            data-te-target="#showcase"
-            data-te-slide-to="2"
-            class="w-3 h-3 my-1 rounded-full border border-white bg-beeYellow bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-          ></button>
+
+          <!-- populated through javascript -->
         </div>
 
         <!--Carousel items-->
         <div
-          class="relative w-full h-full overflow-hidden after:clear-both after:block after:content-['']"
+          class="relative w-full h-full overflow-hidden after:clear-both after:block after:content-[''] carouselItemsContainer"
         >
           <!--First item-->
           <div
@@ -172,112 +162,7 @@
               </div>
             </div>
           </div>
-
-          <!--Second item-->
-          <div
-            class="relative float-left -mr-[100%] hidden w-full h-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-            data-te-carousel-item
-            style="backface-visibility: hidden"
-          >
-            <img
-              src="img/banner/riahbee_home1.webp"
-              class="block w-full h-full object-cover transition-transform duration-300 scale-x-100 scale-y-110"
-              alt=""
-            />
-            <!-- overlay -->
-            <div
-              class="absolute top-0 left-0 w-full h-full bg-customDark/70 z-30 flex items-center justify-center p-5 lg:p-7 xl:p-10 text-white"
-            >
-              <div
-                class="text-center flex items-center flex-col justify-center"
-              >
-                <h2
-                  class="flex items-center text-4xl md:text-5xl xl:text-7xl mb-6 font-thin animate__animated animate__slideInDown"
-                  data-wow-duration="5s"
-                  data-wow-delay="3s"
-                >
-                  <span class="font-thin text-beeYellow mx-2">Fa2Bee</span>
-                  <span class="font-extrabold mx-2">Laundry</span>
-                </h2>
-                <div
-                  class="font-light text-sm md:text-lg animate__animated animate__slideInRight flex items-center mb-7"
-                  data-wow-duration="4s"
-                  data-wow-delay="3s"
-                >
-                  <div
-                    class="w-7 xl:w-10 h-0.5 bg-beeYellow mx-2 lg:mx-4"
-                  ></div>
-                  <p class="text-sm xl:text-lg truncate">
-                    We do commercial laundry for all
-                  </p>
-                  <div
-                    class="w-7 xl:w-10 h-0.5 bg-beeYellow mx-2 lg:mx-4"
-                  ></div>
-                </div>
-                <a
-                  href=""
-                  class="block mt-3 w-fit rounded-3xl hover:bg-customBlack hover:text-beeYellow hover:border hover:border-beeYellow transition-colors duration-500 mx-auto bg-beeYellow text-customBlack py-3 px-7 text-sm animate__animated animate__slideInUp"
-                  data-wow-duration="7s"
-                  data-wow-delay="5s"
-                >
-                  More Details
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- thrid item -->
-          <div
-            class="relative float-left -mr-[100%] hidden w-full h-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-            data-te-carousel-item
-            style="backface-visibility: hidden"
-          >
-            <img
-              src="img/banner/cleaning.png"
-              class="block w-full h-full object-cover transition-transform duration-300 scale-x-100 scale-y-110"
-              alt=""
-            />
-            <!-- overlay -->
-            <div
-              class="absolute top-0 left-0 w-full h-full bg-customDark/70 z-30 flex items-center justify-center p-5 lg:p-7 xl:p-10 text-white"
-            >
-              <div
-                class="text-center flex items-center flex-col justify-center"
-              >
-                <h2
-                  class="flex items-center text-4xl md:text-5xl xl:text-7xl mb-6 font-thin animate__animated animate__slideInDown"
-                  data-wow-duration="5s"
-                  data-wow-delay="3s"
-                >
-                  <span class="font-thin text-beeYellow mx-2">Fa2Bee</span>
-                  <span class="font-extrabold mx-2">Cleaning</span>
-                </h2>
-                <div
-                  class="font-light text-sm md:text-lg animate__animated animate__slideInRight flex items-center mb-7"
-                  data-wow-duration="4s"
-                  data-wow-delay="3s"
-                >
-                  <div
-                    class="w-7 xl:w-10 h-0.5 bg-beeYellow mx-2 lg:mx-4"
-                  ></div>
-                  <p class="text-sm xl:text-lg truncate">
-                    Cleaning & Home Services in the Gambia
-                  </p>
-                  <div
-                    class="w-7 xl:w-10 h-0.5 bg-beeYellow mx-2 lg:mx-4"
-                  ></div>
-                </div>
-                <a
-                  href=""
-                  class="block mt-3 w-fit rounded-3xl hover:bg-customBlack hover:text-beeYellow hover:border hover:border-beeYellow transition-colors duration-500 mx-auto bg-beeYellow text-customBlack py-3 px-7 text-sm animate__animated animate__slideInUp"
-                  data-wow-duration="7s"
-                  data-wow-delay="5s"
-                >
-                  More Details
-                </a>
-              </div>
-            </div>
-          </div>
+          <!-- populated through js -->
         </div>
       </section>
 
@@ -328,7 +213,7 @@
         </div>
 
         <div
-          class="about-carousel owl-carousel owl-theme w-full lg:11/12 xl:w-9/12 h-fit mx-auto rounded-2xl overflow-hidden bg-customBlack shadow-lg shadow-black/30"
+          class="about-carousel owl-carousel owl-theme w-full lg:11/12 xl:w-9/12 h-fit mx-auto overflow-hidden bg-customBlack shadow-lg shadow-black/30"
         >
           <div class="item flex flex-col lg:flex-row lg:items-stretch">
             <div class="w-full lg:w-1/2 h-64 md:h-72 lg:h-96">
@@ -412,95 +297,8 @@
         </div>
 
         <div
-          class="flex flex-col lg:flex-row items-stretch justify-center mb-14"
-        >
-          <!-- item -->
-          <div
-            class="flex-1 flex m-2 my-4 hover:shadow-xl hover:shadow-customDark p-2 transition-all duration-500 animate__animated animate__slideInLeft"
-          >
-            <div class="flex flex-col items-center justify-center">
-              <div class="w-0.5 my-2 bg-beeYellow flex-1"></div>
-              <img
-                class="h-16 w-16 object-scale-down"
-                src="img/services/laundry.png"
-                alt="Fa2Bee Laundry"
-              />
-              <div class="w-0.5 my-2 bg-beeYellow flex-1"></div>
-            </div>
-            <div class="flex-1 p-3 flex flex-col">
-              <h2 class="text-xl mb-4 font-extrabold">Laundry</h2>
-              <p class="text-sm text-gray-200 mb-3">
-                Convenient and quality laundry service. Careful handling, prompt
-                turnaround, and neatly folded clothes. Say goodbye to laundry
-                hassles.
-              </p>
-              <a
-                href=""
-                class="w-fit text-beeYellow flex flex-col after:transition-all after:duration-300 after:w-6 after:border after:border-beeYellow hover:after:w-full"
-              >
-                More Details
-              </a>
-            </div>
-          </div>
-
-          <!-- item -->
-          <div
-            class="flex-1 flex m-2 my-4 hover:shadow-xl hover:shadow-customDark p-2 transition-all duration-500 animate__animated animate__slideInUp"
-          >
-            <div class="flex flex-col items-center justify-center">
-              <div class="w-0.5 my-2 bg-beeYellow flex-1"></div>
-              <img
-                class="h-16 w-16 object-scale-down"
-                src="img/services/cleaning.png"
-                alt="Fa2Bee "
-              />
-              <div class="w-0.5 my-2 bg-beeYellow flex-1"></div>
-            </div>
-            <div class="flex-1 p-3 flex flex-col">
-              <h2 class="text-xl mb-4 font-extrabold">Cleaning</h2>
-              <p class="text-sm text-gray-200 mb-3">
-                Experience professional cleaning services that leave your space
-                spotless and fresh. Thorough, reliable, and hassle-free.
-              </p>
-
-              <a
-                href=""
-                class="w-fit text-beeYellow flex flex-col after:transition-all after:duration-300 after:w-6 after:border after:border-beeYellow hover:after:w-full"
-              >
-                More Details
-              </a>
-            </div>
-          </div>
-
-          <!-- item -->
-          <div
-            class="flex-1 flex m-2 my-4 hover:shadow-xl hover:shadow-customDark p-2 transition-all duration-500 animate__animated animate__slideInRight"
-          >
-            <div class="flex flex-col items-center justify-center">
-              <div class="w-0.5 my-2 bg-beeYellow flex-1"></div>
-              <img
-                class="h-16 w-16 object-scale-down"
-                src="img/services/kids-salon.png"
-                alt="Fa2Bee Kids Salon"
-              />
-              <div class="w-0.5 my-2 bg-beeYellow flex-1"></div>
-            </div>
-            <div class="flex-1 p-3 flex flex-col">
-              <h2 class="text-xl mb-4 font-extrabold">Kids Salon</h2>
-              <p class="text-sm text-gray-200 mb-3">
-                Fun, safe, and stylish salon experience for children. Skilled
-                staff, trendy haircuts, and big smiles guaranteed.
-              </p>
-
-              <a
-                href=""
-                class="w-fit text-beeYellow flex flex-col after:transition-all after:duration-300 after:w-6 after:border after:border-beeYellow hover:after:w-full"
-              >
-                More Details
-              </a>
-            </div>
-          </div>
-        </div>
+          class="flex flex-col lg:flex-row items-stretch justify-center mb-14 homeServicesContainer"
+        ></div>
 
         <a
           href=""
@@ -513,7 +311,6 @@
       </section>
 
       <!-- our numbers -->
-
       <section class="p-5 py-14 xl:p-20 bg-customBlack" id="ourNumbers">
         <h1
           class="text-center mb-7 text-beeYellow font-bold text-2xl md:text-3xl xl:text-4xl"
@@ -711,7 +508,13 @@
       </section>
     </main>
 
-    <footer></footer>
+    <footer class="flex items-center justify-center text-gray-300 p-3">
+      <p>
+        Copyright &copy; <span class="footerDate"></span>
+        <a href="" class="text-beeYellow underline">Fa2Bee Inc.</a> All rights
+        reserved.
+      </p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
     <script
       type="text/javascript"
