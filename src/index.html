@@ -415,8 +415,7 @@
           class="flex flex-col lg:flex-row items-stretch justify-center mb-14"
         >
           <!-- item -->
-          <a
-            href=""
+          <div
             class="flex-1 flex m-2 my-4 hover:shadow-xl hover:shadow-customDark p-2 transition-all duration-500 animate__animated animate__slideInLeft"
           >
             <div class="flex flex-col items-center justify-center">
@@ -428,21 +427,24 @@
               />
               <div class="w-0.5 my-2 bg-beeYellow flex-1"></div>
             </div>
-            <div class="flex-1 p-3">
+            <div class="flex-1 p-3 flex flex-col">
               <h2 class="text-xl mb-4 font-extrabold">Laundry</h2>
-              <p class="text-sm text-gray-200">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
-                consequatur! Voluptates, commodi vero iusto, tenetur repudiandae
-                ut ex eligendi quae, tempora consectetur perspiciatis assumenda
-                est quisquam? Nemo voluptatum culpa cupiditate eum cum cumque
-                delectus! Quam?
+              <p class="text-sm text-gray-200 mb-3">
+                Convenient and quality laundry service. Careful handling, prompt
+                turnaround, and neatly folded clothes. Say goodbye to laundry
+                hassles.
               </p>
+              <a
+                href=""
+                class="w-fit text-beeYellow flex flex-col after:transition-all after:duration-300 after:w-6 after:border after:border-beeYellow hover:after:w-full"
+              >
+                More Details
+              </a>
             </div>
-          </a>
+          </div>
 
           <!-- item -->
-          <a
-            href=""
+          <div
             class="flex-1 flex m-2 my-4 hover:shadow-xl hover:shadow-customDark p-2 transition-all duration-500 animate__animated animate__slideInUp"
           >
             <div class="flex flex-col items-center justify-center">
@@ -454,21 +456,24 @@
               />
               <div class="w-0.5 my-2 bg-beeYellow flex-1"></div>
             </div>
-            <div class="flex-1 p-3">
+            <div class="flex-1 p-3 flex flex-col">
               <h2 class="text-xl mb-4 font-extrabold">Cleaning</h2>
-              <p class="text-sm text-gray-200">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
-                consequatur! Voluptates, commodi vero iusto, tenetur repudiandae
-                ut ex eligendi quae, tempora consectetur perspiciatis assumenda
-                est quisquam? Nemo voluptatum culpa cupiditate eum cum cumque
-                delectus! Quam?
+              <p class="text-sm text-gray-200 mb-3">
+                Experience professional cleaning services that leave your space
+                spotless and fresh. Thorough, reliable, and hassle-free.
               </p>
+
+              <a
+                href=""
+                class="w-fit text-beeYellow flex flex-col after:transition-all after:duration-300 after:w-6 after:border after:border-beeYellow hover:after:w-full"
+              >
+                More Details
+              </a>
             </div>
-          </a>
+          </div>
 
           <!-- item -->
-          <a
-            href=""
+          <div
             class="flex-1 flex m-2 my-4 hover:shadow-xl hover:shadow-customDark p-2 transition-all duration-500 animate__animated animate__slideInRight"
           >
             <div class="flex flex-col items-center justify-center">
@@ -480,17 +485,21 @@
               />
               <div class="w-0.5 my-2 bg-beeYellow flex-1"></div>
             </div>
-            <div class="flex-1 p-3">
+            <div class="flex-1 p-3 flex flex-col">
               <h2 class="text-xl mb-4 font-extrabold">Kids Salon</h2>
-              <p class="text-sm text-gray-200">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
-                consequatur! Voluptates, commodi vero iusto, tenetur repudiandae
-                ut ex eligendi quae, tempora consectetur perspiciatis assumenda
-                est quisquam? Nemo voluptatum culpa cupiditate eum cum cumque
-                delectus! Quam?
+              <p class="text-sm text-gray-200 mb-3">
+                Fun, safe, and stylish salon experience for children. Skilled
+                staff, trendy haircuts, and big smiles guaranteed.
               </p>
+
+              <a
+                href=""
+                class="w-fit text-beeYellow flex flex-col after:transition-all after:duration-300 after:w-6 after:border after:border-beeYellow hover:after:w-full"
+              >
+                More Details
+              </a>
             </div>
-          </a>
+          </div>
         </div>
 
         <a
@@ -501,6 +510,56 @@
         >
           More Services
         </a>
+      </section>
+
+      <!-- our numbers -->
+
+      <section class="p-5 py-14 xl:p-20 bg-customBlack" id="ourNumbers">
+        <h1
+          class="text-center mb-7 text-beeYellow font-bold text-2xl md:text-3xl xl:text-4xl"
+        >
+          Our Numbers
+        </h1>
+        <div class="flex items-center justify-center mb-14">
+          <div class="h-0.5 bg-beeYellow/50 w-20 mx-3"></div>
+          <img src="img/bee-with-ring.png" class="mx-2" />
+          <div class="h-0.5 bg-beeYellow/50 w-20 mx-3"></div>
+        </div>
+
+        <div class="flex flex-col lg:flex-row items-stretch">
+          <div
+            class="flex-1 h-32 border border-gray-400 rounded-tl-full rounded-br-full p-5 m-5 overflow-hidden flex flex-col items-center justify-center py-10"
+          >
+            <h1 class="font-extrabold text-4xl mb-3">
+              <span class="servicesCounter">0</span><span>+</span>
+            </h1>
+            <h2 class="font-bold uppercase text-xl text-beeYellow mb-2">
+              SERVICES
+            </h2>
+          </div>
+          <div
+            class="flex-1 h-32 border border-gray-400 rounded-tl-full rounded-br-full p-5 m-5 overflow-hidden flex flex-col items-center justify-center py-10"
+          >
+            <h1 class="font-extrabold text-4xl mb-3">
+              <span class="clientsCounter">0</span><span>+</span>
+            </h1>
+
+            <h2 class="font-bold uppercase text-xl text-beeYellow mb-2">
+              SATISFIED CLIENTS
+            </h2>
+          </div>
+          <div
+            class="flex-1 h-32 border border-gray-400 rounded-tl-full rounded-br-full p-5 m-5 overflow-hidden flex flex-col items-center justify-center py-10"
+          >
+            <h1 class="font-extrabold text-4xl mb-3">
+              <span class="deliveredCounter">0</span><span>+</span>
+            </h1>
+
+            <h2 class="font-bold uppercase text-xl text-beeYellow mb-2">
+              SERVICES DELIVERED
+            </h2>
+          </div>
+        </div>
       </section>
 
       <!-- testimonial -->
@@ -540,7 +599,7 @@
         </div>
 
         <div class="p-3 md:p-5 xl:p-10 flex flex-col xl:flex-row items-stretch">
-          <div class="flex-1 p-3 grid grid-cols-1 md:grid-cols-2">
+          <div class="flex-1 p-3 grid grid-cols-1 md:grid-cols-2 mb-5">
             <div class="my-4">
               <h2 class="uppercase font-extrabold mb-3 text-beeYellow">
                 Office Address
@@ -604,7 +663,7 @@
             </div>
           </div>
 
-          <form class="flex-1">
+          <form class="flex-1 mb-5">
             <h2 class="uppercase font-extrabold mb-3 text-beeYellow">
               Leave Us a Message
             </h2>
@@ -622,8 +681,14 @@
             </div>
             <textarea
               placeholder="Message"
-              class="bg-customDark p-3 text-gray-400 focus:border-beeYellow outline-none border-b border-gray-50 h-56 max-h-56 min-h-56 w-full"
+              class="bg-customDark p-3 text-gray-400 focus:border-beeYellow outline-none border-b border-gray-50 h-56 max-h-56 min-h-56 w-full mb-7"
             ></textarea>
+            <button
+              type="submit"
+              class="block mt-3 w-fit rounded-3xl hover:bg-customBlack hover:text-beeYellow hover:border hover:border-beeYellow transition-colors duration-500 bg-beeYellow text-customBlack py-3 px-7 text-sm animate__animated animate__slideInUp"
+            >
+              Send Message
+            </button>
           </form>
         </div>
 
@@ -647,6 +712,8 @@
       src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"
     ></script>
     <script src="js/testimonials.js"></script>
+    <script src="js/countUp.js"></script>
+
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="owl-carousel/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
