@@ -2083,6 +2083,10 @@ video {
   background-color: rgb(63 63 70 / var(--tw-bg-opacity));
 }
 
+.bg-customBlack\/80 {
+  background-color: rgb(43 44 48 / 0.8);
+}
+
 .bg-\[url\(\'\.\/img\/testimonials\/testimonials-bg\.png\'\)\] {
   background-image: url('./img/testimonials/testimonials-bg.png');
 }
@@ -4216,6 +4220,10 @@ video {
     height: 18rem;
   }
 
+  .md\:w-full {
+    width: 100%;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -4258,8 +4266,20 @@ video {
     height: 24rem;
   }
 
+  .lg\:h-80 {
+    height: 20rem;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
+  }
+
+  .lg\:w-2\/5 {
+    width: 40%;
+  }
+
+  .lg\:w-1\/5 {
+    width: 20%;
   }
 
   .lg\:flex-row {

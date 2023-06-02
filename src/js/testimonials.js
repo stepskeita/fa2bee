@@ -47,7 +47,7 @@ testimonials.forEach(
   </div>
   <h2 class="text-beeYellow font-extrabold text-2xl mb-2">${testimonial.name}</h2>
   <p class="text-lg mb-7">${testimonial.service}</p>
-  <p class="text-sm">${testimonial.testimonial}</p>
+  <p class="text-sm w-9/12 mx-auto md:w-full">${testimonial.testimonial}</p>
   </div>
 `)
 );
