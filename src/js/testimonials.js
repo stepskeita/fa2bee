@@ -34,13 +34,13 @@ const testimonials = [
       "I've used their cleaning services for both my home and office, and I've been consistently impressed. They pay attention to detail and ensure that every nook and corner is spotless. Great job!",
     image: "./img/testimonials/female-3.png",
   },
-  {
-    name: "Baboucarr Mendy",
-    service: "Laundry",
-    testimonial:
-      "This laundry service is a game-changer for me. They handle my laundry with care, even the delicate items, and deliver them back promptly. It's a huge relief not to worry about laundry anymore!",
-    image: "./img/testimonials/male-3.png",
-  },
+  // {
+  //   name: "Baboucarr Mendy",
+  //   service: "Laundry",
+  //   testimonial:
+  //     "This laundry service is a game-changer for me. They handle my laundry with care, even the delicate items, and deliver them back promptly. It's a huge relief not to worry about laundry anymore!",
+  //   image: "./img/testimonials/male-3.png",
+  // },
   // {
   //   name: "Aminata Ceesay",
   //   service: "Kids Salon",
