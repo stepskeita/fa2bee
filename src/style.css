@@ -2044,6 +2044,10 @@ video {
   background-color: rgb(43 44 48 / 0.9);
 }
 
+.bg-customBlack\/95 {
+  background-color: rgb(43 44 48 / 0.95);
+}
+
 .bg-\[url\(\'img\/testimonial-ng\.png\'\)\] {
   background-image: url('img/testimonial-ng.png');
 }
