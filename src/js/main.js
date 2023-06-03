@@ -174,6 +174,7 @@ $(".about-carousel").owlCarousel({
   nav: false,
   items: 1,
   autoplay: true,
+  autoplaySpeed: 1000,
   autoplayTimeout: 2000,
   autoplayHoverPause: true,
 });
@@ -184,7 +185,7 @@ $(".testimonial-carousel").owlCarousel({
   items: 1,
   autoplay: true,
   autoplayTimeout: 3000,
-  autoplaySpeed: 1000,
+  autoplaySpeed: 1200,
   autoplayHoverPause: true,
   slideTransition: "linear",
   margin: 10,
