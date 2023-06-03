@@ -10,16 +10,6 @@ sideNavCloseBtn.addEventListener("click", (e) => {
   sideNav.classList.toggle("show");
 });
 
-// window.addEventListener("click", (e) => {
-//   if (
-//     sideNav.classList.contains("show") &&
-//     (e.target !== sideNav || !e.target.contains(sideNav))
-//   ) {
-//     console.log("open");
-//     sideNav.classList.toggle("show");
-//   }
-// });
-
 document.querySelector(".footerDate").innerHTML = new Date().getFullYear();
 
 const banners = [
@@ -50,6 +40,7 @@ const homeServicesData = [
       "Convenient and quality laundry service. Careful handling, prompt turnaround, and neatly folded clothes. Say goodbye to laundry hassles.",
     icon: "img/services/laundry.png",
     link: "https://riahbeelaundry.com/",
+    slug: "laundry",
   },
   {
     title: "Cleaning",
@@ -57,6 +48,7 @@ const homeServicesData = [
       "Experience professional cleaning services that leave your space spotless and fresh. Thorough, reliable, and hassle-free.",
     icon: "img/services/cleaning.png",
     link: "",
+    slug: "cleaning",
   },
 
   {
@@ -65,6 +57,7 @@ const homeServicesData = [
       "Fun, safe, and stylish salon experience for children. Skilled staff, trendy haircuts, and big smiles guaranteed.",
     icon: "img/services/kids-salon.png",
     link: "",
+    slug: "kids-salon",
   },
 ];
 const homeServicesContainer = document.querySelector(".homeServicesContainer");
@@ -75,6 +68,7 @@ const carouselItemsContainer = document.querySelector(
 
 const indicatorsContainer = document.querySelector(".indicatorsContainer");
 
+// home banner area
 banners.forEach((banner, idx) => {
   indicatorsContainer.innerHTML += `<button
   type="button"
@@ -138,10 +132,12 @@ style="backface-visibility: hidden"
 `;
 });
 
+// home page services
+
 homeServicesData.forEach((service) => {
   homeServicesContainer.innerHTML += `
   <div
-            class="flex-1 flex m-2 my-4 hover:shadow-xl hover:shadow-customDark p-2 transition-all duration-500 animate__animated animate__slideUp"
+            class="flex-1 flex m-2 my-4 hover:shadow-xl hover:shadow-customDark p-2 transition-all duration-500 service-${service.slug}"
           >
             <div class="flex flex-col items-center justify-center">
               <div class="w-0.5 my-2 bg-beeYellow flex-1"></div>
@@ -211,4 +207,13 @@ window.addEventListener("scroll", () => {
 
 scrollToTop.addEventListener("click", () => {
   window.scrollTo({ top: 0 });
+});
+
+// reveal animation
+homeServicesData.forEach((service, i) => {
+  ScrollReveal().reveal(`.service-${service.slug}`, {
+    duration: 500,
+    dealy: i * 100,
+    reset: true,
+  });
 });
