@@ -2,6 +2,13 @@
 const sideNavBtn = document.querySelector(".sideNavBtn");
 const sideNavCloseBtn = document.querySelector(".sideNavCloseBtn");
 const sideNav = document.querySelector(".sideNav");
+const sideNavContent = document.querySelector(".sideNavContent");
+
+window.addEventListener("click", (e) => {
+  if (e.target.contains(sideNav) && sideNav.classList.contains("show")) {
+    sideNav.classList.toggle("show");
+  }
+});
 
 sideNavBtn.addEventListener("click", (e) => {
   sideNav.classList.toggle("show");
