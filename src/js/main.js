@@ -3,18 +3,22 @@ const sideNavBtn = document.querySelector(".sideNavBtn");
 const sideNavCloseBtn = document.querySelector(".sideNavCloseBtn");
 const sideNav = document.querySelector(".sideNav");
 
-window.addEventListener("click", (e) => {
-  if (e.target.contains(sideNav) && sideNav.classList.contains("show")) {
-    sideNav.classList.toggle("show");
-  }
-});
-
 sideNavBtn.addEventListener("click", (e) => {
   sideNav.classList.toggle("show");
 });
 sideNavCloseBtn.addEventListener("click", (e) => {
   sideNav.classList.toggle("show");
 });
+
+// window.addEventListener("click", (e) => {
+//   if (
+//     sideNav.classList.contains("show") &&
+//     (e.target !== sideNav || !e.target.contains(sideNav))
+//   ) {
+//     console.log("open");
+//     sideNav.classList.toggle("show");
+//   }
+// });
 
 document.querySelector(".footerDate").innerHTML = new Date().getFullYear();
 

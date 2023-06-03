@@ -27,14 +27,12 @@ body {
 .nav {
   z-index: 1000;
 }
-
 .sideNav {
-  transform: translateX(125vw);
-  transition: transform 0.5s linear;
+  z-index: 5000;
+  transform: translateX(100vw);
+  /* transition: transform 0.5s linear; */
 }
-
 .sideNav.show {
-  display: flex;
   transform: translateX(0);
 }
 
