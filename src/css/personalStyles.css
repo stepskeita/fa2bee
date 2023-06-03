@@ -29,13 +29,21 @@ body {
 }
 
 .sideNav {
-  transition: display 0.5s linear;
+  transform: translateX(125vw);
+  transition: transform 0.5s linear;
 }
 
 .sideNav.show {
   display: flex;
+  transform: translateX(0);
 }
 
 .socialLinks {
   z-index: 500;
+}
+.scrollToTop {
+  z-index: 5000;
+}
+.scrollToTop.show {
+  right: 20px;
 }

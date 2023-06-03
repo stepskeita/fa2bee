@@ -2,7 +2,6 @@
 const sideNavBtn = document.querySelector(".sideNavBtn");
 const sideNavCloseBtn = document.querySelector(".sideNavCloseBtn");
 const sideNav = document.querySelector(".sideNav");
-const sideNavContent = document.querySelector(".sideNavContent");
 
 window.addEventListener("click", (e) => {
   if (e.target.contains(sideNav) && sideNav.classList.contains("show")) {
@@ -16,6 +15,7 @@ sideNavBtn.addEventListener("click", (e) => {
 sideNavCloseBtn.addEventListener("click", (e) => {
   sideNav.classList.toggle("show");
 });
+
 document.querySelector(".footerDate").innerHTML = new Date().getFullYear();
 
 const banners = [
@@ -23,7 +23,7 @@ const banners = [
     title: "Laundry",
     description: "We do commercial laundry for all",
     image: "img/banner/riahbee_home1.webp",
-    link: "",
+    link: "https://riahbeelaundry.com/",
   },
   {
     title: "Cleaning",
@@ -45,7 +45,7 @@ const homeServicesData = [
     description:
       "Convenient and quality laundry service. Careful handling, prompt turnaround, and neatly folded clothes. Say goodbye to laundry hassles.",
     icon: "img/services/laundry.png",
-    link: "",
+    link: "https://riahbeelaundry.com/",
   },
   {
     title: "Cleaning",
@@ -192,4 +192,18 @@ $(".testimonial-carousel").owlCarousel({
       items: 3,
     },
   },
+});
+
+const scrollToTop = document.querySelector(".scrollToTop");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY >= 400) {
+    scrollToTop.classList.add("show");
+  } else {
+    scrollToTop.classList.remove("show");
+  }
+});
+
+scrollToTop.addEventListener("click", () => {
+  window.scrollTo({ top: 0 });
 });
