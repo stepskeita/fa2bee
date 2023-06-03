@@ -1,3 +1,14 @@
+// side nav
+const sideNavBtn = document.querySelector(".sideNavBtn");
+const sideNavCloseBtn = document.querySelector(".sideNavCloseBtn");
+const sideNav = document.querySelector(".sideNav");
+
+sideNavBtn.addEventListener("click", (e) => {
+  sideNav.classList.toggle("show");
+});
+sideNavCloseBtn.addEventListener("click", (e) => {
+  sideNav.classList.toggle("show");
+});
 document.querySelector(".footerDate").innerHTML = new Date().getFullYear();
 
 const banners = [

@@ -1,0 +1,41 @@
+:root {
+  --bee-yellow: #e9ab17;
+  --bee-black: #000;
+  --light-bee-yellow: #fde8bc;
+  --custom-yellow: #ffee5c;
+  --custom-black: #2b2c30;
+  --custom-dark: #212529;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--custom-dark);
+  min-height: 100vh;
+}
+
+.nav {
+  z-index: 1000;
+}
+
+.sideNav {
+  transition: display 0.5s linear;
+}
+
+.sideNav.show {
+  display: flex;
+}
+
+.socialLinks {
+  z-index: 500;
+}

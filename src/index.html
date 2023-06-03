@@ -21,6 +21,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css"
     /> -->
+    <link rel="stylesheet" href="css/personalStyles.css" />
     <link href="style.css" rel="stylesheet" />
 
     <title>Fa2Bee</title>
@@ -40,21 +41,64 @@
     <meta property="og:site_name" content="Fa2Bee" />
   </head>
   <body>
+    <!-- very top -->
+    <div class="#top"></div>
     <!-- nav -->
     <nav
-      class="bg-customBlack/80 px-7 py-3 flex items-center justify-between sticky top-0 h-fit nav"
+      class="bg-customBlack/80 px-7 py-3 flex items-center justify-between sticky top-0 h-fit transition-all duration-300 nav"
       id="nav"
     >
-      <a href="index.html">
+      <a href="#top">
         <img src="img/logo-white.png" alt="" class="h-11 object-scale-down" />
       </a>
+      <!-- side -->
+      <div
+        class="fixed top-0 right-0 bottom-0 left-0 justify-end hidden sideNav"
+      >
+        <div
+          class="bg-customDark w-fit h-full transition-all duration-300 animate__animated animate__slideInRight"
+        >
+          <!-- sidenav btn -->
+          <div class="flex justify-end items-center p-3 py-5">
+            <i
+              class="fa-solid fa-times fa-xl cursor-pointer text-beeYellow sideNavCloseBtn"
+            ></i>
+          </div>
+          <!-- sidenav content -->
+          <div class="p-2 flex flex-col">
+            <a href="#top" class="p-2 px-3 text-sm block w-full">Home</a>
+            <a
+              href="#aboutus"
+              class="p-2 px-3 text-sm block w-full active:border-beeYellow"
+              >About</a
+            >
+            <a
+              href="#services"
+              class="p-2 px-3 text-sm block w-full active:border-beeYellow"
+              >Services</a
+            >
+            <a
+              href="#testimonials"
+              class="p-2 px-3 text-sm block w-full active:border-beeYellow"
+              >Testimonials</a
+            >
+            <a
+              href="#contact"
+              class="p-2 px-3 text-sm block w-full active:border-beeYellow"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
       <!-- desktop menu -->
       <div class="xl:hidden">
-        <i class="fa-solid fa-bars fa-xl cursor-pointer text-beeYellow"></i>
+        <i
+          class="fa-solid fa-bars fa-xl cursor-pointer sideNavBtn text-beeYellow"
+        ></i>
       </div>
       <div class="hidden xl:flex items-center text-white">
         <a
-          href="index.html"
+          href="#top"
           class="p-2 px-3 text-sm hover:border-t-2 hover:border-beeYellow hover:text-beeYellow/95"
           >Home</a
         >
@@ -80,6 +124,8 @@
         >
       </div>
     </nav>
+
+    <!-- main content -->
     <main>
       <!-- carousel -->
       <section
@@ -200,12 +246,7 @@
       </div>
 
       <!-- about us -->
-      <section
-        data-te-spy="scroll"
-        data-te-target="#aboutus"
-        class="p-5 py-14 xl:p-20"
-        id="aboutus"
-      >
+      <section class="p-5 py-14 xl:p-20" id="aboutus">
         <h1
           class="text-center mb-7 text-beeYellow font-bold text-2xl md:text-3xl xl:text-4xl"
         >
