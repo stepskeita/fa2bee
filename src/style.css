@@ -4305,6 +4305,10 @@ video {
     flex-direction: row;
   }
 
+  .xl\:items-stretch {
+    align-items: stretch;
+  }
+
   .xl\:p-10 {
     padding: 2.5rem;
   }
