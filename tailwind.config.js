@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        beeYellow: "#ffee5c",
+        beeYellow: "#F3D82C",
         beeBlack: "#000",
         lightBeeYellow: "#E9AB17",
         customYellow: "#FDE8BC",

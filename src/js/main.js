@@ -100,7 +100,7 @@ style="backface-visibility: hidden"
       data-wow-duration="5s"
       data-wow-delay="3s"
     >
-      <span class="font-thin text-beeYellow mx-2">Fa2Bee</span>
+      <span class="font-thin text-beeYellow mx-2">FA2BEE</span>
       <span class="font-extrabold mx-2">${banner.title}</span>
     </h2>
     <div
@@ -144,7 +144,7 @@ homeServicesData.forEach((service) => {
               <img
                 class="h-16 w-16 object-scale-down"
                 src="${service.icon}"
-                alt="Fa2Bee ${service.title}"
+                alt="FA2BEE ${service.title}"
               />
               <div class="w-0.5 my-2 bg-beeYellow flex-1"></div>
             </div>
