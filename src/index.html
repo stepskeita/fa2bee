@@ -51,8 +51,6 @@
     <meta property="og:site_name" content="FA2BEE" />
   </head>
   <body>
-    <!-- very top -->
-    <div class="#top"></div>
     <!-- nav -->
     <nav
       class="bg-customBlack/80 px-7 py-3 flex items-center justify-between sticky top-0 h-fit transition-all duration-300 nav"
@@ -74,25 +72,20 @@
         </div>
         <!-- sidenav content -->
         <div class="p-2 flex flex-col sideNavContent">
-          <a href="#top" class="p-2 px-3 text-sm block w-full">Home</a>
-          <a
-            href="#aboutus"
-            class="p-2 px-3 text-sm block w-full active:border-beeYellow"
+          <a href="#top" class="p-2 px-3 text-sm block w-full nav-link">Home</a>
+          <a href="#aboutus" class="p-2 px-3 text-sm block w-full nav-link"
             >About</a
           >
-          <a
-            href="#services"
-            class="p-2 px-3 text-sm block w-full active:border-beeYellow"
+          <a href="#services" class="p-2 px-3 text-sm block w-full nav-link"
             >Services</a
           >
-          <a
-            href="#testimonials"
-            class="p-2 px-3 text-sm block w-full active:border-beeYellow"
+          <a href="#ourNumbers" class="p-2 px-3 text-sm block w-full nav-link"
+            >Our Numbers</a
+          >
+          <a href="#testimonials" class="p-2 px-3 text-sm block w-full nav-link"
             >Testimonials</a
           >
-          <a
-            href="#contact"
-            class="p-2 px-3 text-sm block w-full active:border-beeYellow"
+          <a href="#contact" class="p-2 px-3 text-sm block w-full nav-link"
             >Contact</a
           >
         </div>
@@ -106,37 +99,41 @@
       <div class="hidden xl:flex items-center text-white">
         <a
           href="#top"
-          class="p-2 px-3 text-sm hover:border-t-2 hover:border-beeYellow hover:text-beeYellow/95"
+          class="p-2 px-3 text-sm hover:border-t-2 hover:border-beeYellow hover:text-beeYellow/95 nav-link"
           >Home</a
         >
         <a
           href="#aboutus"
-          class="p-2 px-3 text-sm hover:border-t-2 hover:border-beeYellow hover:text-beeYellow/95 active:border-beeYellow"
+          class="p-2 px-3 text-sm hover:border-t-2 hover:border-beeYellow hover:text-beeYellow/95 nav-link active"
           >About</a
         >
         <a
           href="#services"
-          class="p-2 px-3 text-sm hover:border-t-2 hover:border-beeYellow hover:text-beeYellow/95 active:border-beeYellow"
+          class="p-2 px-3 text-sm hover:border-t-2 hover:border-beeYellow hover:text-beeYellow/95 nav-link"
           >Services</a
         >
         <a
+          href="#ourNumbers"
+          class="p-2 px-3 text-sm hover:border-t-2 hover:border-beeYellow hover:text-beeYellow/95 nav-link"
+          >Our Numbers</a
+        >
+        <a
           href="#testimonials"
-          class="p-2 px-3 text-sm hover:border-t-2 hover:border-beeYellow hover:text-beeYellow/95 active:border-beeYellow"
+          class="p-2 px-3 text-sm hover:border-t-2 hover:border-beeYellow hover:text-beeYellow/95 nav-link"
           >Testimonials</a
         >
         <a
           href="#contact"
-          class="p-2 px-3 text-sm hover:border-t-2 hover:border-beeYellow hover:text-beeYellow/95 active:border-beeYellow"
+          class="p-2 px-3 text-sm hover:border-t-2 hover:border-beeYellow hover:text-beeYellow/95 nav-link"
           >Contact</a
         >
       </div>
     </nav>
 
     <!-- main content -->
-    <main>
+    <main id="top">
       <!-- carousel -->
       <section
-        id="showcase"
         class="relative h-[93vh]"
         data-te-carousel-init
         data-te-carousel-slide
@@ -584,6 +581,7 @@
     >
       <i class="fa-solid fa-chevron-up text-inherit"></i>
     </button>
+    <script src="js/scrollSpy.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
     <script
       type="text/javascript"
