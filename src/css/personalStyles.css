@@ -49,3 +49,9 @@ body {
 .scrollToTop.show {
   right: 20px;
 }
+
+@media (max-width: 1300px) {
+  .nav-link.active {
+    border: none;
+  }
+}
