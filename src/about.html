@@ -257,8 +257,59 @@
           </p>
         </div>
       </section>
+      <section class="bg-customBlack p-5 py-14 xl:p-20">
+        <h1
+          class="text-center mb-7 text-beeYellow font-bold text-2xl md:text-3xl"
+        >
+          Mission & Vision
+        </h1>
+        <div class="flex items-center justify-center mb-10">
+          <div class="h-0.5 bg-beeYellow/50 w-20 mx-3"></div>
+          <img src="img/bee-with-ring.png" class="mx-2" />
+          <div class="h-0.5 bg-beeYellow/50 w-20 mx-3"></div>
+        </div>
 
-      <section id="services"></section>
+        <div class="flex flex-col xl:flex-row tems-stretch">
+          <div
+            class="flex-1 flex flex-col m-2 my-4 shadow-xl p-4 py-10 shadow-customDark transition-all duration-500 text-center bg-customDark animate__animated animate__slideInLeft"
+            id="mission"
+          >
+            <h2 class="font-bold text-beeYellow text-2xl mb-3">Mission</h2>
+            <p class="w-9/12 mx-auto">
+              At FA2BEE Inc., our mission is to inspire and empower individuals
+              through innovative and inclusive products and services that
+              enhance their lives and promote positive change.
+            </p>
+          </div>
+          <div
+            class="flex-1 flex flex-col m-2 my-4 shadow-xl shadow-customDark p-4 py-10 transition-all duration-500 text-center bg-customDark animate__animated animate__slideInRight"
+            id="vision"
+          >
+            <h2 class="font-bold text-beeYellow text-2xl mb-3">Vision</h2>
+            <p class="w-9/12 mx-auto">
+              Build a world of equal access and inclusive opportunities, Make a
+              lasting impact on communities and individuals, Leave a legacy of
+              empowerment and transformation.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="p-5 py-14 xl:p-20" id="services">
+        <h1
+          class="text-center mb-7 text-beeYellow font-bold text-2xl md:text-3xl"
+        >
+          Our Services
+        </h1>
+        <div class="flex items-center justify-center mb-10">
+          <div class="h-0.5 bg-beeYellow/50 w-20 mx-3"></div>
+          <img src="img/bee-with-ring.png" class="mx-2" />
+          <div class="h-0.5 bg-beeYellow/50 w-20 mx-3"></div>
+        </div>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 servicesContainer"
+        ></div>
+      </section>
     </main>
 
     <footer class="flex items-center justify-center text-center p-3">
@@ -292,5 +343,86 @@
 
     <script src="owl-carousel/owl.carousel.min.js"></script>
     <script src="js/general.js"></script>
+    <script>
+      const homeServicesData = [
+        {
+          title: "Laundry",
+          description:
+            "Convenient and quality laundry service. Careful handling, prompt turnaround, and neatly folded clothes. Say goodbye to laundry hassles.",
+          icon: "img/services/laundry.png",
+          link: "https://riahbeelaundry.com/",
+          slug: "laundry",
+        },
+        {
+          title: "Cleaning",
+          description:
+            "Experience professional cleaning services that leave your space spotless and fresh. Thorough, reliable, and hassle-free.",
+          icon: "img/services/cleaning.png",
+          link: "",
+          slug: "cleaning",
+        },
+
+        {
+          title: "Kids Salon",
+          description:
+            "Fun, safe, and stylish salon experience for children. Skilled staff, trendy haircuts, and big smiles guaranteed.",
+          icon: "img/services/kids-salon.png",
+          link: "",
+          slug: "kids-salon",
+        },
+        {
+          title: "Crochets",
+          description:
+            "From cozy hats and scarves to beautiful beach wear and adorable accessories, our crochet service offers a wide range of meticulously crafted pieces.",
+          icon: "img/services/crochet.png",
+          link: "",
+          slug: "crochet",
+        },
+      ];
+      const servicesContainer = document.querySelector(".servicesContainer");
+
+      homeServicesData.forEach((service) => {
+        servicesContainer.innerHTML += `
+  <div
+            class="flex-1 flex m-2 my-4 hover:shadow-xl hover:shadow-customDark p-2 transition-all duration-500 service-${service.slug}"
+          >
+            <div class="flex flex-col items-center justify-center">
+              <div class="w-0.5 my-2 bg-beeYellow flex-1"></div>
+              <img
+                class="h-16 w-16 object-scale-down"
+                src="${service.icon}"
+                alt="FA2BEE ${service.title}"
+              />
+              <div class="w-0.5 my-2 bg-beeYellow flex-1"></div>
+            </div>
+            <div class="flex-1 p-3 flex flex-col">
+              <h2 class="text-xl mb-4 font-extrabold">${service.title}</h2>
+              <p class="text-sm text-gray-200 mb-3">
+                ${service.description}
+              </p>
+              <a
+                href="${service.link}"
+                class="w-fit text-beeYellow flex flex-col after:transition-all after:duration-300 after:w-6 after:border after:border-beeYellow hover:after:w-full"
+              >
+                More Details
+              </a>
+            </div>
+          </div>
+  `;
+      });
+
+      ScrollReveal().reveal(`#mission`, {
+        duration: 500,
+        reset: true,
+        direction: "left",
+        easing: "ease",
+      });
+
+      ScrollReveal().reveal(`#vision`, {
+        duration: 500,
+        reset: true,
+        direction: "right",
+      });
+    </script>
   </body>
 </html>
