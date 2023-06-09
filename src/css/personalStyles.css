@@ -50,8 +50,26 @@ body {
   right: 20px;
 }
 
+.two-column-text {
+  -webkit-columns: 40px 2;
+  /* Chrome, Safari, Opera */
+  -moz-columns: 60px 2;
+  /* Firefox */
+  columns: 60px 2;
+}
+
 @media (max-width: 1300px) {
   .nav-link.active {
     border: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .two-column-text {
+    -webkit-columns: 40px 1;
+    /* Chrome, Safari, Opera */
+    -moz-columns: 60px 1;
+    /* Firefox */
+    columns: 60px 1;
   }
 }
