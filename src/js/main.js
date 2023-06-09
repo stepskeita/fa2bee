@@ -170,7 +170,7 @@ $(".about-carousel").owlCarousel({
   nav: false,
   items: 1,
   autoplay: true,
-  autoplaySpeed: 1000,
+  autoplaySpeed: 2000,
   autoplayTimeout: 2000,
   autoplayHoverPause: true,
 });
