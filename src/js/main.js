@@ -171,7 +171,7 @@ $(".about-carousel").owlCarousel({
   items: 1,
   autoplay: true,
   autoplaySpeed: 2000,
-  autoplayTimeout: 2000,
+  autoplayTimeout: 5000,
   autoplayHoverPause: true,
 });
 $(".testimonial-carousel").owlCarousel({
