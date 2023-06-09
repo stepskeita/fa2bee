@@ -17,7 +17,7 @@ const banners = [
     title: "Laundry",
     description: "We do commercial laundry for all",
     image: "img/banner/riahbee_home1.webp",
-    link: "https://riahbeelaundry.com/",
+    link: "fa2bee-laundry.html",
   },
   {
     title: "Cleaning",
@@ -39,7 +39,7 @@ const homeServicesData = [
     description:
       "Convenient and quality laundry service. Careful handling, prompt turnaround, and neatly folded clothes. Say goodbye to laundry hassles.",
     icon: "img/services/laundry.png",
-    link: "https://riahbeelaundry.com/",
+    link: "fa2bee-laundry.html",
     slug: "laundry",
   },
   {
