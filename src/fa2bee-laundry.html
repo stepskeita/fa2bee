@@ -278,6 +278,21 @@
           </div>
         </div>
       </section>
+
+      <section class="p-5 py-5 xl:p-20 xl:px-36 bg-white" id="services">
+        <h1 class="text-center mb-4 text-laundryPurple font-bold text-xl">
+          Our Laundry Services
+        </h1>
+        <div class="flex items-center justify-center mb-10">
+          <div class="h-0.5 bg-laundryPurple w-20 mx-3"></div>
+          <img src="img/bee-with-ring.png" class="mx-2" />
+          <div class="h-0.5 bg-laundryPurple w-20 mx-3"></div>
+        </div>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-3 services-container"
+        ></div>
+      </section>
     </main>
 
     <footer class="flex items-center justify-center text-center p-3">
@@ -311,5 +326,91 @@
 
     <script src="owl-carousel/owl.carousel.min.js"></script>
     <script src="js/general.js"></script>
+    <script>
+      const services = [
+        {
+          title:
+            '<span class="text-beeYellow">Laun</span><span class="text-laundryPurple">dry</span>',
+          description:
+            "Our professional laundry service ensures that your clothes are thoroughly cleaned and refreshed, giving you that crisp and clean feeling you love. With state-of-the-art equipment and high-quality detergents, we guarantee exceptional results.",
+          image: "img/laundry/laundry.png",
+        },
+        {
+          title:
+            '<span class="text-beeYellow">Dry</span><span class="text-laundryPurple ml-2">Cleaning</span>',
+          description:
+            "Trust our specialized dry cleaning service to take care of your delicate fabrics and garments. Our experienced team uses gentle yet effective cleaning methods to remove stains and odors, preserving the integrity and beauty of your clothes.",
+          image: "img/laundry/dry-cleaning.png",
+        },
+        {
+          title:
+            '<span class="mr-2 text-beeYellow">Ironing and</span> <span class="text-laundryPurple">Pressing<span/>',
+          description:
+            "Experience the convenience of perfectly pressed clothes with our ironing and pressing service. Our skilled staff meticulously iron each garment, leaving them wrinkle-free and ready to wear, so you can look your best effortlessly.",
+          image: "img/laundry/ironing-pressing.png",
+        },
+        {
+          title:
+            '<span class="mr-2 text-beeYellow">Towel and</span> <span class="text-laundryPurple">Linen Supply<span/>',
+          description:
+            "We offer a wide range of high-quality towels for businesses, including bath towels, hand towels, and washcloths. Our towels are soft, absorbent, and durable, providing your customers or guests with a comfortable and hygienic experience.",
+          image: "img/laundry/towels-and-linen.png",
+        },
+        {
+          title:
+            '<span class="mr-2 text-beeYellow">Stain</span> <span class="text-laundryPurple">Removal<span/>',
+          description:
+            "Our experts are trained in advanced stain removal techniques, effectively tackling even the toughest stains. Whether it's a coffee spill or ink mark, we strive to restore your garments to their original condition, ensuring they look as good as new.",
+          image: "img/laundry/stain-removal.png",
+        },
+
+        {
+          title:
+            '<span class="mr-2 text-beeYellow">Alterations and</span> <span class="text-laundryPurple">Repairs<span/>',
+          description:
+            "Need a perfect fit or repairs for your favorite garment? Our skilled tailors provide alteration services and can mend any damages, so your clothes always fit you well and look their best.",
+          image: "img/laundry/alterations-and-repairs.png",
+        },
+
+        {
+          title:
+            '<span class="mr-2 text-beeYellow">Folding and</span> <span class="text-laundryPurple">Packing<span/>',
+          description:
+            "We take care of the folding and packaging of your clothes, making it easy for you to organize and store them neatly or take them on the go. Our attention to detail ensures that your clothes are handled with care and delivered in a professional manner.",
+          image: "img/laundry/folding-and-packaging.png",
+        },
+        {
+          title:
+            '<span class="mr-2 text-beeYellow">Pick-up and</span> <span class="text-laundryPurple">Delivery<span/>',
+          description:
+            "Enjoy the convenience of our pick-up and delivery service. Simply schedule a pick-up, and we'll collect your laundry from your doorstep. Once it's cleaned and ready, we'll deliver it back to you, saving you time and effort.",
+          image: "img/laundry/pickup-and-delivery.png",
+        },
+      ];
+
+      const servicesContainer = document.querySelector(".services-container");
+
+      services.forEach((service) => {
+        servicesContainer.innerHTML += `
+        <div
+            class="overflow-hidden border border-beeYellow"
+          >
+           <div class="h-52 overflow-hidden">
+            <img
+              src="${service.image}"
+              alt="FA2BEE Laundry"
+              class="w-full object-cover hover:scale-110 transition-transform duration-700"
+            />
+            </div>
+            <div class="p-4 lg:p-5">
+              <h2 class="font-bold text-laundryPurple text-xl mb-2">${service.title}</h2>
+              <p class="text-black text-xs">
+              ${service.description}
+              </p>
+            </div>
+          </div>
+        `;
+      });
+    </script>
   </body>
 </html>
