@@ -7,7 +7,6 @@ const sections = [
   document.querySelector("#testimonials"),
   document.querySelector("#contact"),
 ];
-console.log(sections);
 // for window scrolldown event
 window.addEventListener("scroll", (e) => {
   sections.forEach((section) => {

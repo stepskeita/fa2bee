@@ -58,6 +58,12 @@ body {
   columns: 60px 2;
 }
 
+#accordion .ui-accordion-header {
+  font-size: medium;
+  padding: 5px;
+  text-align: left;
+}
+
 @media (max-width: 1300px) {
   .nav-link.active {
     border: none;
@@ -71,5 +77,11 @@ body {
     -moz-columns: 60px 1;
     /* Firefox */
     columns: 60px 1;
+  }
+
+  #accordion .ui-accordion-header {
+    font-size: x-small;
+    padding: 5px;
+    text-align: left;
   }
 }
